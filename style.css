@@ -286,6 +286,31 @@ main {
   .skill-tags { grid-column: 1; }
 }
 
+/* ---- TRAIT PILLS ---- */
+.trait-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.trait-pill {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--text-bright);
+  background: var(--surface2);
+  border: 1px solid var(--border-light);
+  border-radius: 99px;
+  padding: 0.35rem 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.trait-pill:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
 /* ---- QUEST LOG ---- */
 .quest-log { display: grid; gap: 1.5rem; }
 
